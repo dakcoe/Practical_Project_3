@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>English Word List</title>
+    <link rel="stylesheet" href="formal.css">
+    <link rel="stylesheet" type="text/css" href="my.css" media="screen and (max-width: 768px)">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <!-- 네비게이션 바 내용 -->
+</nav>
+
+<main role="main" class="container">
+    <div class="header-section">
+        <h2>English Word List</h2>
+        <p>Add and explore new words</p>
+    </div>
+
+    <!-- Add Word Form -->
+    <h3>Add New Word</h3>
+    <form onsubmit="event.preventDefault(); addWordToTable();">
+        <table class="table table-borderless">
+            <tr>
+                <td><label for="add-word">Word:</label></td>
+                <td><input type="text" id="add-word" name="word" required></td>
+            </tr>
+            <tr>
+                <td><label for="add-meaning">Meaning:</label></td>
+                <td><input type="text" id="add-meaning" name="meaning" required></td>
+            </tr>
+            <tr>
+                <td><label for="add-example">Example:</label></td>
+                <td><input type="text" id="add-example" name="example"></td>
+            </tr>
+        </table>
+        <button type="button" class="btn btn-primary">Add Word</button>
+    </form>
+
+    <hr>
+
+    <!-- Word List Table -->
+    <h3>Words and Meanings</h3>
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Word</th>
+                <th>Meaning</th>
+                <th>Example</th>
+                <th>Date Added</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 예시 단어 데이터 -->
+            <tr>
+                <td>1</td>
+                <td>Exemplar</td>
+                <td>A person or thing...</td>
+                <td>The best results...</td>
+                <td>2023.10.08</td>
+                <td>
+                    <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
+                    <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
+                    <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                </td>
+            </tr>
+            <!-- 여기에 추가 단어 데이터를 넣을 수 있습니다. -->
+        </tbody>
+    </table>
+</main>
+
+<style>
+    /* 이전 코드에서 사용된 스타일 */
+</style>
+
+<script>
+function addWordToTable() {
+    // 단어, 의미, 예제를 가져옵니다.
+    var word = document.getElementById("add-word").value;
+    var meaning = document.getElementById("add-meaning").value;
+    var example = document.getElementById("add-example").value;
+    
+    // 현재 날짜를 가져옵니다.
+    var currentDate = new Date();
+    var formattedDate = currentDate.getFullYear() + "." + (currentDate.getMonth() + 1) + "." + currentDate.getDate();
+
+    // 테이블에 새 행을 추가합니다.
+    var table = document.querySelector(".table tbody");
+    var newRow = table.insertRow();
+
+    // 각 셀에 데이터를 추가합니다.
+    newRow.insertCell(0).innerText = table.rows.length;
+    newRow.insertCell(1).innerText = word;
+    newRow.insertCell(2).innerText = meaning;
+    newRow.insertCell(3).innerText = example;
+    newRow.insertCell(4).innerText = formattedDate;
+
+    // 동작 버튼을 추가합니다.
+    var actionCell = newRow.insertCell(5);
+    actionCell.innerHTML = `
+        <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
+        <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
+        <button class="btn btn-danger btn-sm delete-button" onclick="deleteWordFromTable(this)">Delete</button>
+    `;
+
+    // 입력 폼을 초기화합니다.
+    document.getElementById("add-word").value = "";
+    document.getElementById("add-meaning").value = "";
+    document.getElementById("add-example").value = "";
+}
+
+function deleteWordFromTable(button) {
+    var row = button.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+}
+
+function deleteWord() {
+    return confirm("Do you want to delete this word?");
+}
+</script>
+
+</body>
+
+</html>
