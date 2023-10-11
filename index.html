@@ -16,10 +16,6 @@
         <h1><a class="navbar-brand" href="index.html">English Word List</a></h1>
     </nav>
 
-    <div class="header-section">
-        <p>Add and explore new words</p>
-    </div>
-
     <!-- Add Word Form -->
     <h3>Add New Word</h3>
     <form onsubmit="event.preventDefault(); addWordToTable();">
@@ -42,26 +38,25 @@
 
     <hr>
 
-    <!-- Word List Table -->
-    <h3>Words and Meanings</h3>
-    <table class="table table-striped table-sm">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Word</th>
-                <th>Meaning</th>
-                <th>Example</th>
-                <th>Date Added</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- 예시 단어 데이터 -->
+<!-- Word List Table -->
+<h3>Words and Meanings</h3>
+<table class="table table-striped table-sm">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Word</th>
+            <th>Meaning</th>
+            <th>Example</th>
+            <th>Date Added</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
 <tr>
     <td>1</td>
-    <td>Exemplar</td>
-    <td>A person or thing serving as a model.</td>
-    <td>The best results serve as an exemplar for others.</td>
+    <td>Paragon</td>
+    <td>A model of excellence or perfection.</td>
+    <td>The artist is a paragon of creativity.</td>
     <td>2023.10.08</td>
     <td>
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
@@ -71,9 +66,9 @@
 </tr>
 <tr>
     <td>2</td>
-    <td>Alacrity</td>
-    <td>Eagerness, speed</td>
-    <td>He accepted with alacrity.</td>
+    <td>Zest</td>
+    <td>Great enthusiasm and energy.</td>
+    <td>She approached the project with zest.</td>
     <td>2023.10.09</td>
     <td>
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
@@ -83,9 +78,9 @@
 </tr>
 <tr>
     <td>3</td>
-    <td>Benevolent</td>
-    <td>Showing kindness or goodwill.</td>
-    <td>The benevolent king was loved by all.</td>
+    <td>Amicable</td>
+    <td>Having a disposition characterized by warmth and friendliness.</td>
+    <td>The two leaders had an amicable discussion.</td>
     <td>2023.10.10</td>
     <td>
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
@@ -95,9 +90,9 @@
 </tr>
 <tr>
     <td>4</td>
-    <td>Cacophony</td>
-    <td>A harsh, discordant mixture of sounds.</td>
-    <td>The street was filled with the cacophony of horns and shouting.</td>
+    <td>Dissonance</td>
+    <td>Lack of harmony among musical notes.</td>
+    <td>The piece began with a dissonance that caught everyone's attention.</td>
     <td>2023.10.11</td>
     <td>
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
@@ -107,9 +102,9 @@
 </tr>
 <tr>
     <td>5</td>
-    <td>Dauntless</td>
-    <td>Showing fearlessness and determination.</td>
-    <td>The dauntless warrior pressed forward.</td>
+    <td>Valor</td>
+    <td>Great courage in the face of danger.</td>
+    <td>The soldier was awarded for his valor in battle.</td>
     <td>2023.10.12</td>
     <td>
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
@@ -119,9 +114,9 @@
 </tr>
 <tr>
     <td>6</td>
-    <td>Ephemeral</td>
-    <td>Lasting for a very short time.</td>
-    <td>The rainbow was an ephemeral beauty.</td>
+    <td>Transient</td>
+    <td>Lasting only for a short time; temporary.</td>
+    <td>The pain was transient and soon passed.</td>
     <td>2023.10.13</td>
     <td>
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
@@ -131,9 +126,9 @@
 </tr>
 <tr>
     <td>7</td>
-    <td>Flourish</td>
-    <td>To grow or develop in a healthy way.</td>
-    <td>Plants flourish in the fertile soil.</td>
+    <td>Thrive</td>
+    <td>To grow or develop vigorously; to flourish.</td>
+    <td>Businesses thrive in a stable economy.</td>
     <td>2023.10.14</td>
     <td>
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
@@ -143,9 +138,9 @@
 </tr>
 <tr>
     <td>8</td>
-    <td>Gregarious</td>
-    <td>Fond of company; sociable.</td>
-    <td>He was a gregarious and outgoing individual.</td>
+    <td>Sociable</td>
+    <td>Willing to talk and engage in activities with other people.</td>
+    <td>She's a sociable child who plays well with others.</td>
     <td>2023.10.15</td>
     <td>
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
@@ -155,9 +150,9 @@
 </tr>
 <tr>
     <td>9</td>
-    <td>Harangue</td>
-    <td>A lengthy and aggressive speech.</td>
-    <td>He delivered a long harangue criticizing the policies.</td>
+    <td>Oratory</td>
+    <td>The art of public speaking, especially in a formal and eloquent manner.</td>
+    <td>He was known for his powerful oratory skills.</td>
     <td>2023.10.16</td>
     <td>
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
@@ -167,70 +162,10 @@
 </tr>
 <tr>
     <td>10</td>
-    <td>Ineffable</td>
-    <td>Too great or extreme to be expressed in words.</td>
-    <td>The beauty of the scene was ineffable.</td>
+    <td>Sublime</td>
+    <td>Of such excellence or beauty as to inspire great admiration or awe.</td>
+    <td>The view from the mountain was simply sublime.</td>
     <td>2023.10.17</td>
-    <td>
-        <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-        <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-        <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-    </td>
-</tr>
-<tr>
-    <td>11</td>
-    <td>Juxtapose</td>
-    <td>To place or deal with close together for contrasting effect.</td>
-    <td>Black-and-white photos were juxtaposed with color images.</td>
-    <td>2023.10.18</td>
-    <td>
-        <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-        <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-        <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-    </td>
-</tr>
-<tr>
-    <td>12</td>
-    <td>Knell</td>
-    <td>The sound of a bell, especially when rung for a death or a funeral.</td>
-    <td>The knell tolled for the departed soul.</td>
-    <td>2023.10.19</td>
-    <td>
-        <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-        <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-        <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-    </td>
-</tr>
-<tr>
-    <td>13</td>
-    <td>Luminous</td>
-    <td>Full of or shedding light; bright or shining.</td>
-    <td>The room was luminous with sunlight.</td>
-    <td>2023.10.20</td>
-    <td>
-        <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-        <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-        <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-    </td>
-</tr>
-<tr>
-    <td>14</td>
-    <td>Munificent</td>
-    <td>More generous than is usual or necessary.</td>
-    <td>The charity received a munificent donation.</td>
-    <td>2023.10.21</td>
-    <td>
-        <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-        <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-        <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-    </td>
-</tr>
-<tr>
-    <td>15</td>
-    <td>Nefarious</td>
-    <td>Typically of an action or activity, wicked or criminal.</td>
-    <td>The villain hatched a nefarious plan.</td>
-    <td>2023.10.22</td>
     <td>
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
         <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
