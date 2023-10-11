@@ -181,17 +181,22 @@
             </tr>
         </table>
         <button type="button" class="btn btn-primary" onclick="addWordToTable()">Add Word</button>
+        <button type="button" class="btn btn-secondary" onclick="location.href='add.html'">Go to Add Page</button>
     </form>
 </div>
 </main>
 
 <script>
 function addWordToTable() {
-    // 단어, 의미, 예제를 가져옵니다.
     var word = document.getElementById("add-word").value;
     var meaning = document.getElementById("add-meaning").value;
     var example = document.getElementById("add-example").value;
-    
+
+    if (!word || !meaning) {
+        alert("Word and Meaning are required fields.");
+        return;
+    }
+
     // 현재 날짜를 가져옵니다.
     var currentDate = new Date();
     var formattedDate = currentDate.getFullYear() + "." + (currentDate.getMonth() + 1) + "." + currentDate.getDate();
