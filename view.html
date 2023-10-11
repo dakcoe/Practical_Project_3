@@ -2,49 +2,46 @@
 <html lang="en">
 
 <head>
-    ...
-    <title>View Word Details</title>
-    ...
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>View Word</title>
+    <link rel="stylesheet" href="formal.css">
+    <link rel="stylesheet" type="text/css" href="my.css" media="screen and (max-width: 768px)">
 </head>
 
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    ...
+    <a class="navbar-brand" href="index.html">English Word List</a>
 </nav>
 
 <main role="main" class="container">
-    <div class="header-section">
-        <h2>Word Details</h2>
-        <p>View the details of the selected word.</p>
-    </div>
-
-    <table class="table table-bordered">
+    <h2>Word Details</h2>
+    <table class="table table-striped table-sm">
         <tr>
             <th>Word</th>
             <td>Exemplar</td>
         </tr>
         <tr>
             <th>Meaning</th>
-            <td>A person or thing serving as a typical example or appropriate model.</td>
+            <td>A person or thing serving as a model.</td>
         </tr>
         <tr>
             <th>Example</th>
-            <td>The best results have been obtained with exemplars printed on paper.</td>
+            <td>The best results serve as an exemplar for others.</td>
         </tr>
     </table>
-
-    <div class="actions">
-        <button class="btn btn-secondary" onclick="location.href='edit.html'">Edit</button>
-        <button class="btn btn-danger" onclick="deleteWord()">Delete</button>
-    </div>
+    <button onclick="location.href='edit.html'" class="btn btn-secondary">Edit</button>
+    <button onclick="confirmDelete()" class="btn btn-danger">Delete</button>
 </main>
 
-<!-- Styles from the index.html -->
-
 <script>
-    function deleteWord() {
-        return confirm("Do you want to delete this word?");
+    function confirmDelete() {
+        var confirmation = confirm("게시물을 삭제할까요?");
+        if (confirmation) {
+            // Implement deletion logic here. Typically involves contacting a server to delete a record.
+            alert("게시물이 삭제되었습니다.");
+        }
     }
 </script>
 

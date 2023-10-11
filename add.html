@@ -2,46 +2,57 @@
 <html lang="en">
 
 <head>
-    ...
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Add New Word</title>
-    ...
+    <link rel="stylesheet" href="formal.css">
+    <link rel="stylesheet" type="text/css" href="my.css" media="screen and (max-width: 768px)">
 </head>
 
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    ...
+    <a class="navbar-brand" href="index.html">English Word List</a>
 </nav>
 
 <main role="main" class="container">
-    <div class="header-section">
-        <h2>Add a New English Word</h2>
-        <p>Fill in the details of the word you'd like to add.</p>
-    </div>
-
-    <form action="#" method="POST">
+    <h2>Add New Word</h2>
+    <form onsubmit="event.preventDefault(); addNewWord();">
         <table class="table table-borderless">
             <tr>
-                <td><label for="word">Word:</label></td>
-                <td><input type="text" id="word" name="word" required></td>
+                <td><label for="add-word">Word:</label></td>
+                <td><input type="text" id="add-word" name="word" required></td>
             </tr>
             <tr>
-                <td><label for="meaning">Meaning:</label></td>
-                <td><input type="text" id="meaning" name="meaning" required></td>
+                <td><label for="add-meaning">Meaning:</label></td>
+                <td><input type="text" id="add-meaning" name="meaning" required></td>
             </tr>
             <tr>
-                <td><label for="example">Example:</label></td>
-                <td><input type="text" id="example" name="example"></td>
+                <td><label for="add-example">Example:</label></td>
+                <td><input type="text" id="add-example" name="example"></td>
             </tr>
         </table>
-        <button type="submit" class="btn btn-primary">Add Word</button>
+        <button type="button" class="btn btn-primary" onclick="testAlert()">추가</button>
     </form>
 </main>
 
-<!-- Styles from the index.html -->
-
 <script>
-    // Add any required scripts here
+    function testAlert() {
+        alert("게시물이 추가됩니다");
+    }
+
+    function addNewWord() {
+        var word = document.getElementById("add-word").value;
+        var meaning = document.getElementById("add-meaning").value;
+
+        // Validation checks
+        if(word === "" || meaning === "") {
+            alert("Word and Meaning are required fields.");
+            return;
+        }
+
+        // In a real scenario, send this data to a server to store in a database
+    }
 </script>
 
 </body>
