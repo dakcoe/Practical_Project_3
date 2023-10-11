@@ -11,50 +11,50 @@
 
 <body>
 
-<main role="main" class="container">
-    <nav class="navbar navbar-inverse">
-        <h1><a class="navbar-brand" href="index.html">English Word List</a></h1>
-    </nav>
-    <div class="container text-center">
-        <h2>Add New Word</h2>
-    </div>
-    <form onsubmit="event.preventDefault(); addNewWord();">
-        <table class="table table-borderless">
-            <tr>
-                <td><label for="add-word">Word:</label></td>
-                <td><input type="text" id="add-word" name="word" required></td>
-            </tr>
-            <tr>
-                <td><label for="add-meaning">Meaning:</label></td>
-                <td><input type="text" id="add-meaning" name="meaning" required></td>
-            </tr>
-            <tr>
-                <td><label for="add-example">Example:</label></td>
-                <td><input type="text" id="add-example" name="example"></td>
-            </tr>
-        </table>
-        <button type="button" class="btn btn-primary" onclick="testAlert()">추가</button>
-    </form>
-</main>
+    <main role="main" class="container">
+        <nav class="navbar navbar-inverse">
+            <h1><a class="navbar-brand" href="index.html">English Word List</a></h1>
+        </nav>
+        <div class="container text-center">
+            <h2>Add New Word</h2>
+        </div>
+        <form onsubmit="event.preventDefault(); addNewWord();">
+            <table class="table table-borderless">
+                <tr>
+                    <td><label for="add-word">Word:</label></td>
+                    <td><input type="text" id="add-word" name="word" required></td>
+                </tr>
+                <tr>
+                    <td><label for="add-meaning">Meaning:</label></td>
+                    <td><input type="text" id="add-meaning" name="meaning" required></td>
+                </tr>
+                <tr>
+                    <td><label for="add-example">Example:</label></td>
+                    <td><input type="text" id="add-example" name="example"></td>
+                </tr>
+            </table>
+            <button type="button" class="btn btn-primary" onclick="testAlert()">추가</button>
+        </form>
+    </main>
 
-<script>
-    function testAlert() {
-        alert("게시물이 추가됩니다");
-    }
-
-    function addNewWord() {
-        var word = document.getElementById("add-word").value;
-        var meaning = document.getElementById("add-meaning").value;
-
-        // Validation checks
-        if(word === "" || meaning === "") {
-            alert("Word and Meaning are required fields.");
-            return;
+    <script>
+        function testAlert() {
+            alert("게시물이 추가됩니다");
         }
 
-        // In a real scenario, send this data to a server to store in a database
-    }
-</script>
+        function addNewWord() {
+            var word = document.getElementById("add-word").value;
+            var meaning = document.getElementById("add-meaning").value;
+
+            // Validation checks
+            if (word === "" || meaning === "") {
+                alert("Word and Meaning are required fields.");
+                return;
+            }
+
+            // In a real scenario, send this data to a server to store in a database
+        }
+    </script>
 
 </body>
 

@@ -11,230 +11,251 @@
 
 <body>
 
-<main role="main" class="container">
-    <nav class="navbar navbar-inverse">
-        <h1><a class="navbar-brand" href="index.html">English Word List</a></h1>
-    </nav>
+    <main role="main" class="container">
+        <nav class="navbar navbar-inverse">
+            <h1><a class="navbar-brand" href="index.html">English Word List</a></h1>
+        </nav>
 
-<!-- Word List Table -->
-<div class="container text-center">
-    <h3>Words and Meanings</h3>
-</div>
-<div class="table-responsive"> <!-- table-responsive 클래스 추가 -->
-    <table class="table table-striped table-sm">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Word</th>
-                <th>Meaning</th>
-                <th>Example</th>
-                <th>Date Added</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-    <tr>
-        <td>1</td>
-        <td>Paragon</td>
-        <td>A model of excellence or perfection.</td>
-        <td>The artist is a paragon of creativity.</td>
-        <td>2023.10.08</td>
-        <td>
-            <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-            <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-        </td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Zest</td>
-        <td>Great enthusiasm and energy.</td>
-        <td>She approached the project with zest.</td>
-        <td>2023.10.09</td>
-        <td>
-            <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-            <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-        </td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Amicable</td>
-        <td>Having a disposition characterized by warmth and friendliness.</td>
-        <td>The two leaders had an amicable discussion.</td>
-        <td>2023.10.10</td>
-        <td>
-            <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-            <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-        </td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Dissonance</td>
-        <td>Lack of harmony among musical notes.</td>
-        <td>The piece began with a dissonance that caught everyone's attention.</td>
-        <td>2023.10.11</td>
-        <td>
-            <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-            <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-        </td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Valor</td>
-        <td>Great courage in the face of danger.</td>
-        <td>The soldier was awarded for his valor in battle.</td>
-        <td>2023.10.12</td>
-        <td>
-            <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-            <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-        </td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Transient</td>
-        <td>Lasting only for a short time; temporary.</td>
-        <td>The pain was transient and soon passed.</td>
-        <td>2023.10.13</td>
-        <td>
-            <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-            <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-        </td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>Thrive</td>
-        <td>To grow or develop vigorously; to flourish.</td>
-        <td>Businesses thrive in a stable economy.</td>
-        <td>2023.10.14</td>
-        <td>
-            <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-            <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-        </td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Sociable</td>
-        <td>Willing to talk and engage in activities with other people.</td>
-        <td>She's a sociable child who plays well with others.</td>
-        <td>2023.10.15</td>
-        <td>
-            <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-            <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-        </td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>Oratory</td>
-        <td>The art of public speaking, especially in a formal and eloquent manner.</td>
-        <td>He was known for his powerful oratory skills.</td>
-        <td>2023.10.16</td>
-        <td>
-            <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-            <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-        </td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>Sublime</td>
-        <td>Of such excellence or beauty as to inspire great admiration or awe.</td>
-        <td>The view from the mountain was simply sublime.</td>
-        <td>2023.10.17</td>
-        <td>
-            <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
-            <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
-            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
-        </td>
-    </tr>
-</tbody>
-</table>
+        <!-- Word List Table -->
+        <div class="container text-center">
+            <h3>Words and Meanings</h3>
+        </div>
+        <div class="table-responsive"> <!-- table-responsive 클래스 추가 -->
+            <table class="table table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Word</th>
+                        <th>Meaning</th>
+                        <th>Example</th>
+                        <th>Date Added</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Paragon</td>
+                        <td>A model of excellence or perfection.</td>
+                        <td>The artist is a paragon of creativity.</td>
+                        <td>2023.10.08</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm view-button"
+                                onclick="location.href='view.html'">View</button>
+                            <button class="btn btn-secondary btn-sm edit-button"
+                                onclick="location.href='edit.html'">Edit</button>
+                            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Zest</td>
+                        <td>Great enthusiasm and energy.</td>
+                        <td>She approached the project with zest.</td>
+                        <td>2023.10.09</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm view-button"
+                                onclick="location.href='view.html'">View</button>
+                            <button class="btn btn-secondary btn-sm edit-button"
+                                onclick="location.href='edit.html'">Edit</button>
+                            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Amicable</td>
+                        <td>Having a disposition characterized by warmth and friendliness.</td>
+                        <td>The two leaders had an amicable discussion.</td>
+                        <td>2023.10.10</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm view-button"
+                                onclick="location.href='view.html'">View</button>
+                            <button class="btn btn-secondary btn-sm edit-button"
+                                onclick="location.href='edit.html'">Edit</button>
+                            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Dissonance</td>
+                        <td>Lack of harmony among musical notes.</td>
+                        <td>The piece began with a dissonance that caught everyone's attention.</td>
+                        <td>2023.10.11</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm view-button"
+                                onclick="location.href='view.html'">View</button>
+                            <button class="btn btn-secondary btn-sm edit-button"
+                                onclick="location.href='edit.html'">Edit</button>
+                            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Valor</td>
+                        <td>Great courage in the face of danger.</td>
+                        <td>The soldier was awarded for his valor in battle.</td>
+                        <td>2023.10.12</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm view-button"
+                                onclick="location.href='view.html'">View</button>
+                            <button class="btn btn-secondary btn-sm edit-button"
+                                onclick="location.href='edit.html'">Edit</button>
+                            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Transient</td>
+                        <td>Lasting only for a short time; temporary.</td>
+                        <td>The pain was transient and soon passed.</td>
+                        <td>2023.10.13</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm view-button"
+                                onclick="location.href='view.html'">View</button>
+                            <button class="btn btn-secondary btn-sm edit-button"
+                                onclick="location.href='edit.html'">Edit</button>
+                            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Thrive</td>
+                        <td>To grow or develop vigorously; to flourish.</td>
+                        <td>Businesses thrive in a stable economy.</td>
+                        <td>2023.10.14</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm view-button"
+                                onclick="location.href='view.html'">View</button>
+                            <button class="btn btn-secondary btn-sm edit-button"
+                                onclick="location.href='edit.html'">Edit</button>
+                            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Sociable</td>
+                        <td>Willing to talk and engage in activities with other people.</td>
+                        <td>She's a sociable child who plays well with others.</td>
+                        <td>2023.10.15</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm view-button"
+                                onclick="location.href='view.html'">View</button>
+                            <button class="btn btn-secondary btn-sm edit-button"
+                                onclick="location.href='edit.html'">Edit</button>
+                            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Oratory</td>
+                        <td>The art of public speaking, especially in a formal and eloquent manner.</td>
+                        <td>He was known for his powerful oratory skills.</td>
+                        <td>2023.10.16</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm view-button"
+                                onclick="location.href='view.html'">View</button>
+                            <button class="btn btn-secondary btn-sm edit-button"
+                                onclick="location.href='edit.html'">Edit</button>
+                            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Sublime</td>
+                        <td>Of such excellence or beauty as to inspire great admiration or awe.</td>
+                        <td>The view from the mountain was simply sublime.</td>
+                        <td>2023.10.17</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm view-button"
+                                onclick="location.href='view.html'">View</button>
+                            <button class="btn btn-secondary btn-sm edit-button"
+                                onclick="location.href='edit.html'">Edit</button>
+                            <button class="btn btn-danger btn-sm delete-button" onclick="deleteWord()">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-</div>
+        </div>
 
-            <!-- 여기에 추가 단어 데이터를 넣을 수 있습니다. -->
-    
-<div>
-    <!-- Add Word Form -->
-    <div class="container text-center">
-        <h3>Add New Word</h3>
-    </div>
-    <form onsubmit="event.preventDefault(); addWordToTable();">
-        <table class="table table-borderless">
-            <tr>
-                <td><label for="add-word">Word:</label></td>
-                <td><input type="text" id="add-word" name="word" required></td>
-            </tr>
-            <tr>
-                <td><label for="add-meaning">Meaning:</label></td>
-                <td><input type="text" id="add-meaning" name="meaning" required></td>
-            </tr>
-            <tr>
-                <td><label for="add-example">Example:</label></td>
-                <td><input type="text" id="add-example" name="example"></td>
-            </tr>
-        </table>
-        <button type="button" class="btn btn-primary" onclick="addWordToTable()">Add Word</button>
-        <button type="button" class="btn btn-secondary" onclick="location.href='add.html'">Go to Add Page</button>
-    </form>
-</div>
-</main>
+        <!-- 여기에 추가 단어 데이터를 넣을 수 있습니다. -->
 
-<script>
-function addWordToTable() {
-    var word = document.getElementById("add-word").value;
-    var meaning = document.getElementById("add-meaning").value;
-    var example = document.getElementById("add-example").value;
+        <div>
+            <!-- Add Word Form -->
+            <div class="container text-center">
+                <h3>Add New Word</h3>
+            </div>
+            <form onsubmit="event.preventDefault(); addWordToTable();">
+                <table class="table table-borderless">
+                    <tr>
+                        <td><label for="add-word">Word:</label></td>
+                        <td><input type="text" id="add-word" name="word" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="add-meaning">Meaning:</label></td>
+                        <td><input type="text" id="add-meaning" name="meaning" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="add-example">Example:</label></td>
+                        <td><input type="text" id="add-example" name="example"></td>
+                    </tr>
+                </table>
+                <button type="button" class="btn btn-primary" onclick="addWordToTable()">Add Word</button>
+                <button type="button" class="btn btn-secondary" onclick="location.href='add.html'">Go to Add
+                    Page</button>
+            </form>
+        </div>
+    </main>
 
-    if (!word || !meaning) {
-        alert("Word and Meaning are required fields.");
-        return;
-    }
+    <script>
+        function addWordToTable() {
+            var word = document.getElementById("add-word").value;
+            var meaning = document.getElementById("add-meaning").value;
+            var example = document.getElementById("add-example").value;
 
-    // 현재 날짜를 가져옵니다.
-    var currentDate = new Date();
-    var formattedDate = currentDate.getFullYear() + "." + (currentDate.getMonth() + 1) + "." + currentDate.getDate();
+            if (!word || !meaning) {
+                alert("Word and Meaning are required fields.");
+                return;
+            }
 
-    // 테이블에 새 행을 추가합니다.
-    var table = document.querySelector(".table tbody");
-    var newRow = table.insertRow();
+            // 현재 날짜를 가져옵니다.
+            var currentDate = new Date();
+            var formattedDate = currentDate.getFullYear() + "." + (currentDate.getMonth() + 1) + "." + currentDate.getDate();
 
-    // 각 셀에 데이터를 추가합니다.
-    newRow.insertCell(0).innerText = table.rows.length;
-    newRow.insertCell(1).innerText = word;
-    newRow.insertCell(2).innerText = meaning;
-    newRow.insertCell(3).innerText = example;
-    newRow.insertCell(4).innerText = formattedDate;
+            // 테이블에 새 행을 추가합니다.
+            var table = document.querySelector(".table tbody");
+            var newRow = table.insertRow();
 
-    // 동작 버튼을 추가합니다.
-    var actionCell = newRow.insertCell(5);
-    actionCell.innerHTML = `
+            // 각 셀에 데이터를 추가합니다.
+            newRow.insertCell(0).innerText = table.rows.length;
+            newRow.insertCell(1).innerText = word;
+            newRow.insertCell(2).innerText = meaning;
+            newRow.insertCell(3).innerText = example;
+            newRow.insertCell(4).innerText = formattedDate;
+
+            // 동작 버튼을 추가합니다.
+            var actionCell = newRow.insertCell(5);
+            actionCell.innerHTML = `
         <button class="btn btn-primary btn-sm view-button" onclick="location.href='view.html'">View</button>
         <button class="btn btn-secondary btn-sm edit-button" onclick="location.href='edit.html'">Edit</button>
         <button class="btn btn-danger btn-sm delete-button" onclick="deleteWordFromTable(this)">Delete</button>
     `;
 
-    // 입력 폼을 초기화합니다.
-    document.getElementById("add-word").value = "";
-    document.getElementById("add-meaning").value = "";
-    document.getElementById("add-example").value = "";
-}
+            // 입력 폼을 초기화합니다.
+            document.getElementById("add-word").value = "";
+            document.getElementById("add-meaning").value = "";
+            document.getElementById("add-example").value = "";
+        }
 
-function deleteWordFromTable(button) {
-    var row = button.parentNode.parentNode;
-    row.parentNode.removeChild(row);
-}
+        function deleteWordFromTable(button) {
+            var row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
 
-function deleteWord() {
-    return confirm("Do you want to delete this word?");
-}
-</script>
+        function deleteWord() {
+            return confirm("Do you want to delete this word?");
+        }
+    </script>
 
 </body>
 

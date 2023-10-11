@@ -11,51 +11,53 @@
 
 <body>
 
-<main role="main" class="container">
-    <nav class="navbar navbar-inverse">
-        <h1><a class="navbar-brand" href="index.html">English Word List</a></h1>
-    </nav>
-    <div class="container text-center">
-        <h2>Edit Word</h2>
-    </div>
-    <form onsubmit="event.preventDefault(); editWord();">
-        <!-- Similar form layout to add.html, but pre-filled data -->
-        <table class="table table-borderless">
-            <tr>
-                <td><label for="edit-word">Word:</label></td>
-                <td><input type="text" id="edit-word" name="word" value="Exemplar" required></td>
-            </tr>
-            <tr>
-                <td><label for="edit-meaning">Meaning:</label></td>
-                <td><input type="text" id="edit-meaning" name="meaning" value="A person or thing serving as a model." required></td>
-            </tr>
-            <tr>
-                <td><label for="edit-example">Example:</label></td>
-                <td><input type="text" id="edit-example" name="example" value="The best results serve as an exemplar for others."></td>
-            </tr>
-        </table>
-        <button type="submit" class="btn btn-primary">Update</button>
-    </form>
-</main>
+    <main role="main" class="container">
+        <nav class="navbar navbar-inverse">
+            <h1><a class="navbar-brand" href="index.html">English Word List</a></h1>
+        </nav>
+        <div class="container text-center">
+            <h2>Edit Word</h2>
+        </div>
+        <form onsubmit="event.preventDefault(); editWord();">
+            <!-- Similar form layout to add.html, but pre-filled data -->
+            <table class="table table-borderless">
+                <tr>
+                    <td><label for="edit-word">Word:</label></td>
+                    <td><input type="text" id="edit-word" name="word" value="Exemplar" required></td>
+                </tr>
+                <tr>
+                    <td><label for="edit-meaning">Meaning:</label></td>
+                    <td><input type="text" id="edit-meaning" name="meaning"
+                            value="A person or thing serving as a model." required></td>
+                </tr>
+                <tr>
+                    <td><label for="edit-example">Example:</label></td>
+                    <td><input type="text" id="edit-example" name="example"
+                            value="The best results serve as an exemplar for others."></td>
+                </tr>
+            </table>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </main>
 
-<script>
-    function editWord() {
-        var word = document.getElementById("edit-word").value;
-        var meaning = document.getElementById("edit-meaning").value;
+    <script>
+        function editWord() {
+            var word = document.getElementById("edit-word").value;
+            var meaning = document.getElementById("edit-meaning").value;
 
-        // Add your validation checks here
-        if(word === "" || meaning === "") {
-            alert("Word and Meaning are required fields.");
-            return;
+            // Add your validation checks here
+            if (word === "" || meaning === "") {
+                alert("Word and Meaning are required fields.");
+                return;
+            }
+
+            var confirmation = confirm("게시물을 수정할까요?");
+            if (confirmation) {
+                // Implement editing logic here. Typically this involves sending updated data to a server to store in a database.
+                alert("게시물이 수정되었습니다.");
+            }
         }
-
-        var confirmation = confirm("게시물을 수정할까요?");
-        if (confirmation) {
-            // Implement editing logic here. Typically this involves sending updated data to a server to store in a database.
-            alert("게시물이 수정되었습니다.");
-        }
-    }
-</script>
+    </script>
 
 </body>
 
