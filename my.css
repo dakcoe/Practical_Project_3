@@ -11,4 +11,8 @@ body {
     }
 }
 
-/* ... Add more styles as needed ... */
+.navbar-brand{
+background-color: #315af0;
+  color: #ffffff;
+  padding: 10px;
+}
